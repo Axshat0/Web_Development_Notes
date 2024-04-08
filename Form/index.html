@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Submission Form For Becoming Spongebob</h1>
+    <form action="index.php" method="POST">
+        <!-- username input -->
+        <div>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+        </div>
+        <!-- password input -->
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" minlength="6" maxlength="15"
+                placeholder="Enter your password" required>
+        </div>
+        <!-- email input -->
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email">
+        </div>
+        <!-- phone number -->
+        <div>
+            <label for="phone">Phone</label>
+            <input type="tel" name="phone" id="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+        </div>
+        <!-- gender input -->
+        <div>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+        <!-- date of birth -->
+        <div>
+            <label for="bday">Birth date</label>
+            <input type="date" name="date">
+        </div>
+        <!-- whaere are you form -->
+        <div>
+            <label for="region">Region</label>
+            <select name="area" id="region">
+                <option value="north">North</option>
+                <option value="south">South</option>
+                <option value="east">East</option>
+                <option value="west">West</option>
+            </select>
+        </div>
+        <!-- checkbox input -->
+        <div>
+            <input type="checkbox" name="checkbox" id="subscribe">
+            <label for="subscribe">Subscribe</label>
+        </div>
+        <!-- comment box -->
+        <div>
+            <label for="comment">Comment :</label><br>
+            <textarea name="comment" id="comment rows=" 3" cols="25"></textarea>
+        </div>
+        <!-- file input -->
+        <div>
+            <label for="file">File :</label>
+            <input type="file" name="file" id="file" accept="image/png, image/jpeg">
+        </div>
+        <!-- submit and reset button -->
+        <div>
+            <input type="reset"><br>
+            <input type="submit">
+        </div>
+
+
+
+    </form>
+
+</body>
+</html>
