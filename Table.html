@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+</head>
+
+<body>
+    <!-- Tables -->
+    <!-- HTML tables allow you to arrange data like text, images, and links in rows and columns. You use the <table> tag to start and end a table -->
+    <table>
+        <!-- Defines the table itself -->
+        <tr>
+            <!-- Used for table rows -->
+            <th>Name</th>
+            <th>Age</th> <!-- Used for table headings -->
+        </tr>
+        <tr>
+            <td>Harry</td> <!-- Used for table cells (data) -->
+            <td>100</td>
+        </tr>
+    </table>
+
+    <!-- rowspan and colspan Attributes -->
+    <!-- If you want a table cell to span multiple rows, you can use the rowspan attribute -->
+    <td rowspan="value"></td>
+
+    <!-- If you want a table cell to span multiple columns, you can use the colspan attribute -->
+    <td colspan="value"></td>
+
+    <!-- To add a title to your table, you can use the <caption> element. This element helps both in terms of SEO and accessibility -->
+    <table>
+        <caption>Student Details</caption>
+        <!-- Rest of the table here -->
+    </table>
+
+    <!-- Table Headers and Footers -->
+    <!-- Besides <th> for individual header cells, HTML tables allow you to group header or footer content using <thead> and <tfoot>. -->
+    <table>
+        <thead>
+            <!--  header content -->
+        </thead>
+        <tfoot>
+            <!-- footer content -->
+        </tfoot>
+        <tbody>
+            <!-- body content -->
+        </tbody>
+    </table>
+
+    <!-- Sample HTML Table -->
+    <table border="1">
+        <!-- Caption -->
+        <caption>Employee Information</caption>
+
+        <!-- Table Header -->
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+
+        <!-- Table Body -->
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Alice</td>
+                <td>Developer</td>
+                <td>$80,000</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Bob</td>
+                <td>Designer</td>
+                <td>$70,000</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Carol</td>
+                <td>Manager</td>
+                <td>$90,000</td>
+            </tr>
+        </tbody>
+
+        <!-- Table Footer -->
+        <tfoot>
+            <tr>
+                <td colspan="3">Total Employees</td>
+                <td>3</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+
+</html>

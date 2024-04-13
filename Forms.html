@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMS</title>
+</head>
+
+<body>
+
+    <form action="index.php" method="POST">
+        <!-- Text Box Area -->
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username" placeholder="Enter your username" minlength="4" maxlength="15"
+            autofocus required>
+        <br>
+
+        <!-- Password input -->
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="Enter your password" required>
+        <br>
+
+        <!-- Email input -->
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="xyz@gmail.com">
+        <br>
+
+        <!-- Phone number input -->
+        <label for="phone">Phone</label>
+        <input type="tel" name="number" id="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+        <br>
+
+        <!-- Birth date input -->
+        <label for="bday">Birth date</label>
+        <input type="date" name="bday" id="bday">
+        <br>
+
+        <!-- Radio button -->
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <br>
+
+        <!-- Dropdown menu -->
+        <label for="place">Place</label>
+        <select>
+            <option value="overworld">Overworld</option>
+            <option value="nether">Nether</option>
+            <option value="end">End</option>
+        </select>
+        <br>
+
+        <!-- Check box -->
+        <input type="checkbox" name="checkbox" id="subscribe">
+        <label for="subscribe">Subscribe</label>
+        <br>
+
+        <!-- Text area -->
+        <label for="comment">Comment</label>
+        <textarea name="comment" id="comment" cols="30" rows="5"></textarea>
+        <br>
+
+        <!-- File upload -->
+        <label for="file">File</label>
+        <input type="file" name="file" id="file" accept="image/png, image/jpeg">
+        <br>
+
+        <!-- Submit and reset button -->
+        <input type="submit">
+        <input type="reset">
+
+    </form>
+
+</body>
+
+</html>
