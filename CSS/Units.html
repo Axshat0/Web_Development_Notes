@@ -1,20 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Units in CSS</title>
 </head>
+
 <body>
-    <!-- Absolute: pixels (px) -->
-    <!-- 96px = 1 inch -->
     <style>
-        p{
-            font-size: 2px;
+        div {
+            /* 1. Percentage (%): It is often used to define a size as relative to an element's parent object */
+            width: 50%;
+            
+
+            
+            /* 4. vh: relative to 1% viewport height */
+            /* 5. vw : relative to 1% viewport width */
+
         }
-        
+        div p:first-child{
+            /* 2. Em: unit is relative to the font size of the parent element */
+           font-size: 2em; 
+        }
+        div p:nth-child(2){
+            /* 3. Rem: unit is relative to the font size of the root (HTML) element */
+            font-size: 2rem;
+        }
+        span{
+            width: 50vw;
+            height: 50vh;
+        }
     </style>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, ex.</p>
-    
+
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, consectetur! Enim sapiente, eveniet nostrum tempore doloribus quaerat ex vel placeat qui aut saepe eos quibusdam sint, perferendis reiciendis nihil recusandae? Dicta, molestiae. Nam, recusandae architecto minus quam aperiam est repellendus optio esse provident aspernatur! Exercitationem.
+        <p>Hi!, I'm para</p>
+        <p>Hi! I'm heading</p>
+    </div>
+
+    <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, ipsam.</span>
+
 </body>
+
 </html>
