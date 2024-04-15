@@ -8,19 +8,44 @@
 <body>
     <!-- The position CSS property sets how an element is positioned in a document. -->
     <!-- position : static / relative / fixed -->
-
-    <!-- static - default position (The top, right, bottom, left, and z-index properties have no effect) -->
-
-    <!-- relative - element is relative to itself. (The top, right, bottom, left, and z-index will work) -->
-
-    <!-- absolute - positioned relative to its closest positioned ancestor. (removed from the flow) -->
-
-    <!-- fixed - positioned relative to browser. (removed from flow) -->
-
-    <!-- sticky - positioned based on user's scroll position -->
-
     <style>
-
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        div{
+            height: 50px;
+            width: 50px;
+            padding: 50px;
+            display: inline-block;
+        }
+        /* static - default position (The top, right, bottom, left, and z-index properties have no effect) */
+        .static{
+            background: red;
+            position: static;
+        }
+        /* relative - element is relative to itself. (The top, right, bottom, left, and z-index will work) */
+        .relative{
+            background-color: green;
+            position: relative;
+        }
+        /* absolute - positioned relative to its closest positioned ancestor. (removed from the flow) */
+        .absolute{
+            background-color: yellow;
+            position: absolute;
+            /* Overlapping elements with a larger z-index cover those with a smaller one. */
+            z-index: 1;
+        }
+        /* fixed - positioned relative to browser. (removed from flow) */
+        .fixed{
+            background-color: blue;
+            position: fixed;
+        }
+        /* sticky - positioned based on user's scroll position */
+        .sticky{
+            background-color: pink;
+            position: sticky;
+        }
     </style>
 
     <div class="static">static</div>
@@ -28,6 +53,8 @@
     <div class="absolute">absolute</div>
     <div class="fixed">fixed</div>
     <div class="sticky">sticky</div>
+
+    <p style="width: 10px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, rem quidem fuga eius quod sed illo pariatur cum enim nemo molestias sunt. Incidunt nulla aliquam minima odit vitae autem asperiores aut facilis sequi possimus eaque pariatur aspernatur beatae necessitatibus quas, facere reiciendis corrupti dolor! Temporibus ipsum aut atque nesciunt corporis.</p>
 
 </body>
 </html>
