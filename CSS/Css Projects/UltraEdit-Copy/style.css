@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI';
+    color: #2a2a2a;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 3vh;
+    gap: 15vw;
+}
+
+.logo img {
+    width: 12vw;
+}
+
+.right ul li {
+    list-style-type: none;
+}
+
+.right ul {
+    display: flex;
+    gap: 2vw;
+    align-items: center;
+}
+
+.logo2 {
+    display: flex;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+    margin-top: 10vh;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.heading h1 {
+    font-size: 45px;
+    font-weight: normal;
+
+}
+
+.heading img {
+    margin-top: 2vh;
+}
+
+.para {
+    font-size: 1.5em;
+}
+
+.para-div{
+    max-width: 69vw;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+.button a {
+    text-decoration: none;
+    color: white;
+    background-color: #34b5bf;
+    padding: 15px 20px 15px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: small;
+}
+
+.title {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50%;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+    gap: 1vw;
+    align-items: center;
+}
+
+.title h3 {
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.title h3 small {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.title img {
+    width: 4vw;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 335px);
+    grid-template-rows: repeat(4, 155px);
+    gap: 2vw;
+    justify-content: center;
+}
+
+.items {
+    display: grid;
+    background-color: #f7f7f7;
+    justify-content: center;
+    grid-template-rows: 54px 50px;
+    justify-items: center;
+}
+
+.items a {
+    text-decoration: none;
+    color: white;
+    background-color: #4bab3dd6;
+    border-radius: 4px;
+    padding: 8px 15px 8px 15px;
+    font-size: small;
+    font-weight: 900;
+    width: 114px;
+    height: 20px;
+}
+
+.items h3 {
+    margin-top: 3vh;
+}
+
+#item1{
+    grid-template-rows: 103px 51px;
+}
+
+footer{
+    width: 100vw;
+    height: 30vh;
+    background-color: #2e2b2b;
+    margin-top: 55px;
+}
