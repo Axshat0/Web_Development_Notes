@@ -1,121 +1,106 @@
-* {
+*{
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI';
-    color: #2a2a2a;
+}
+body{
+    color: #222222;
 }
 
-nav {
+/* Navigation bar */
+nav{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-    margin: 3vh;
-    gap: 15vw;
+    padding: 1vw 0px;
 }
-
-.logo img {
-    width: 12vw;
-}
-
-.right ul li {
-    list-style-type: none;
-}
-
-.right ul {
+.nav-items{
     display: flex;
     gap: 2vw;
-    align-items: center;
+}
+.web-logo img{
+    width: 173px;
+}
+.items i{
+    font-size: 10px;
+}
+.bar-icon{
+    font-size: 1.5rem;
+    color: #2ea3f2;
+    display: none;
 }
 
-.logo2 {
-    display: flex;
+/* main */
+main{
+    padding: 4vw 0px;
+    margin: auto;
+    width: 68vw;
 }
-
-.heading {
+.heading{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2vw;
-    margin-top: 10vh;
-    flex-wrap: wrap;
+}
+.button{
+    display: flex;
+    justify-content: center;
+}
+.heading h1{
+    font-size: 3rem;
+    font-weight: 400;
+}
+.para{
+    font-size: 1.5rem;
     text-align: center;
 }
-
-.heading h1 {
-    font-size: 45px;
-    font-weight: normal;
-
-}
-
-.heading img {
-    margin-top: 2vh;
-}
-
-.para {
-    font-size: 1.5em;
-}
-
-.para-div{
-    max-width: 69vw;
-}
-
-.button {
-    display: flex;
-    justify-content: center;
-    margin-top: 5vh;
-}
-
-.button a {
+.button a{
+    background-color: #00b6d1;
     text-decoration: none;
     color: white;
-    background-color: #34b5bf;
-    padding: 15px 20px 15px 20px;
+    font-size: 0.85rem;
+    padding: 0.95vw 1.5vw;
+    font-weight: 700;
     border-radius: 5px;
-    font-weight: bold;
-    font-size: small;
 }
-
-.title {
+.para-div{
+    padding: 2vw;
+}
+.title{
     display: flex;
-    justify-content: flex-end;
-    margin-right: 50%;
-    margin-top: 10vh;
-    margin-bottom: 5vh;
-    gap: 1vw;
     align-items: center;
+    gap: 1vw;
+    margin-top: 4vw;
+    margin-bottom: 3vw;
 }
-
-.title h3 {
+.title img{
+    width: 60px;
+}
+.title h3 small{
+    font-size: 0.90rem;
+}
+.title h3{
     font-weight: 400;
-    font-size: 25px;
+    font-size: 1.5rem;
 }
 
-.title h3 small {
-    font-size: 13px;
-    font-weight: 400;
-}
-
-.title img {
-    width: 4vw;
-}
-
+/* Containers */
 .container {
     display: grid;
-    grid-template-columns: repeat(3, 335px);
-    grid-template-rows: repeat(4, 155px);
+    grid-template-columns: repeat(3, 22vw);
+    grid-template-rows: repeat(4, 19vh);
     gap: 2vw;
     justify-content: center;
 }
 
-.items {
+.content {
     display: grid;
     background-color: #f7f7f7;
     justify-content: center;
-    grid-template-rows: 54px 50px;
+    grid-template-rows: 7vh 5vh;
     justify-items: center;
 }
 
-.items a {
+.content a {
     text-decoration: none;
     color: white;
     background-color: #4bab3dd6;
@@ -127,17 +112,82 @@ nav {
     height: 20px;
 }
 
-.items h3 {
+.content h3 {
     margin-top: 3vh;
 }
 
-#item1{
-    grid-template-rows: 103px 51px;
+#content1{
+    grid-template-rows: 12vh 7vh;
 }
 
+/* Media */
+
+/* Nav bar */
+@media (max-width: 950px){
+    .items{
+        display: none;
+    }
+    .bar-icon{
+        display: block;
+    }
+    nav{
+        justify-content: space-between;
+        padding: 12px;
+    }
+    .web-logo img{
+        width: 134px;
+    }
+}
+
+/* main */
+@media (max-width: 600px){
+    .button a{
+        padding: 3vw 3vw;
+    }
+    .para-div{
+        padding: 6vw 4vw;
+    }
+    .heading h1{
+        font-size: 2rem;
+    }
+    main{
+        width: 80vw;
+    }
+    .para{
+        font-size: 1rem;
+    }
+}
 footer{
-    width: 100vw;
-    height: 30vh;
-    background-color: #2e2b2b;
-    margin-top: 55px;
+    width: 100%;
+    height: 50vh;
+    background-color: #222222;
+}
+
+/* main mid */
+@media (max-width: 600px){
+    .title{
+        margin-top: 10vw;
+    }
+    .title img{
+        width: 50px;
+    }
+    .title h3{
+        font-size: 0.95rem;
+    }
+    .title h3 small{
+        font-size: 0.85rem;
+    }
+}
+
+/* Container */
+@media (max-width: 930px){
+    .container{
+        grid-template-columns: repeat(2, 40vw);
+    }
+}
+@media (max-width: 630px){
+    .container{
+        grid-template-columns: 55vw;
+        gap: 3vh;
+    }
 }
