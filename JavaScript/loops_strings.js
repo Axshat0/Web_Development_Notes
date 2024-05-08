@@ -39,3 +39,20 @@ let student = {
 for(let key in student){
     console.log("Key = ", key, " Value = ", student[key]);
 }
+
+// Strings in js
+let str  = "Luffy"
+console.log(str.length); //Find Lenght
+console.log(str[2]); //String Indices
+console.log(str.toUpperCase( )); //To UpperCase
+console.log(str.toLowerCase( )); //To LowerCase
+
+let char = "   Naruto uzumaki   "
+console.log(char.trim( )); // removes whitespaces
+
+let name = "Spongebob";
+console.log(`Hello ${name}`); //String Interpolation
+console.log(name.slice(6, 9));  // returns part of string
+console.log(char.concat(name)) // joins str2 with str1
+console.log(name.replace("Sponge", "Stone"));
+console.log(name.charAt(6)) // character at index
